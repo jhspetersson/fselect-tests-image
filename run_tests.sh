@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 cd "$(dirname "$0")" || exit 1
 
@@ -25,7 +25,9 @@ if [ ! -f "$TEST_EXECUTABLE" ]; then
   exit 1
 fi
 
-find ../tests -type d | while read -r dir; do
+RESULT=0
+
+while read -r dir; do
   query_file="$dir/query.txt"
   output_file="$dir/output.txt"
 
@@ -42,5 +44,14 @@ find ../tests -type d | while read -r dir; do
     printf "%s: ${GREEN}ok${NC}\n" "$dir"
   else
     printf "%s: ${RED}fail${NC}\n${GU}Expected:\n${NC}%s\n\n${GU}Actual:\n${NC}%s\n" "$dir" "$expected" "$actual"
+    RESULT=1
   fi
-done
+done < <(find ../tests -type d)
+
+if [ $RESULT -eq 0 ]; then
+  echo -e "\nAll tests ${GREEN}PASSED${NC}"
+else
+  echo -e "\nSome tests ${RED}FAILED${NC}"
+fi
+
+exit $RESULT
