@@ -38,7 +38,7 @@ while read -r dir; do
   expected=$(sed 's/\r//' < "$output_file")
   actual=$($TEST_EXECUTABLE "$query" 2>/dev/null)
 
-  dir=${dir#../tests/}
+  dir=${dir#tests/}
   if [ "$actual" = "$expected" ]; then
     printf "%s: ${GREEN}ok${NC}\n" "$dir"
   else
