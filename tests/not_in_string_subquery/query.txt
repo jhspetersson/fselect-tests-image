@@ -1,0 +1,1 @@
+select name from fs/dir1 depth 1 where filename not in (select filename from fs/dir1/dir11) and is_file order by name

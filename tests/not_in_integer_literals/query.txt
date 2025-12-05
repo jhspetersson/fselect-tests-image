@@ -1,0 +1,1 @@
+select name from fs where size not in (5, 6) and not is_dir order by name

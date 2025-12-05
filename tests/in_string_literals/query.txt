@@ -1,0 +1,1 @@
+select name from fs/dir1 where filename in ('file2', 'file3') and is_file order by name

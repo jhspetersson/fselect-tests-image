@@ -1,0 +1,1 @@
+select name from fs/dir1 where size in (5, 6) order by name
