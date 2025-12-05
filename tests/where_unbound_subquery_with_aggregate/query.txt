@@ -1,0 +1,1 @@
+select name from fs/dir1 where size = (select max(size) from fs/dir1 where is_file)

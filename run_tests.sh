@@ -36,7 +36,7 @@ while read -r dir; do
 
   query=$(cat "$query_file")
   expected=$(sed 's/\r//' < "$output_file")
-  actual=$($TEST_EXECUTABLE "$query" 2>/dev/null)
+  actual=$($TEST_EXECUTABLE "$query")
 
   dir=${dir#tests/}
   if [ "$actual" = "$expected" ]; then

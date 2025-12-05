@@ -1,0 +1,1 @@
+select max(size) as max_size from fs where is_file

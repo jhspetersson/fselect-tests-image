@@ -1,0 +1,1 @@
+select count(name) from fs/dir1 depth 1 as d1 where size <= (select max(size) from fs/dir1/dir11 as d11 where d1.filename = d11.filename)
