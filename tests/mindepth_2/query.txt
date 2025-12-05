@@ -1,0 +1,1 @@
+select name from fs/dir1 mindepth 2 where is_file order by name

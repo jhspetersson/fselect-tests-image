@@ -1,0 +1,1 @@
+select name from fs/dir1 as d1 where exists (select name from fs/dir1/dir11 as d11 where d11.filename = d1.filename) and ext = 'txt' order by name
