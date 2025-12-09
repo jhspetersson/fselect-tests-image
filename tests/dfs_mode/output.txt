@@ -3,5 +3,3 @@ file3.md
 file4.md
 file1.txt
 file2.txt
-test1.c
-test2.c
