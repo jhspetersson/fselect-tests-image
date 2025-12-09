@@ -1,0 +1,1 @@
+select name from fs where ext !=~ '^c$' and is_file order by name, ext

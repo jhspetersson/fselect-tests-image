@@ -1,0 +1,1 @@
+select name from fs where ext =~ '^(txt|md)$' order by name, ext

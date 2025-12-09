@@ -1,0 +1,1 @@
+select name from fs where name =~ '(file1|test2)' order by name

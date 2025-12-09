@@ -1,0 +1,1 @@
+select name from fs where name =~ '^file[0-9]+\.txt$' order by name

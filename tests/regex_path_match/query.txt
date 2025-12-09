@@ -1,0 +1,1 @@
+select name from fs where path =~ 'dir11' and is_file order by name
