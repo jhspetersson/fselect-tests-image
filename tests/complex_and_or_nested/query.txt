@@ -1,0 +1,1 @@
+select name from fs where path = '*dir1*' and (ext = 'txt' or (name = 'file*' and ext = 'md')) order by name, ext

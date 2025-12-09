@@ -1,0 +1,1 @@
+select name from fs where ext = 'txt' and name = 'file1*' order by name

@@ -1,0 +1,1 @@
+select name from fs where (ext = 'txt' and name = 'file1*') or (ext = 'c' and name = 'test1*') order by name
