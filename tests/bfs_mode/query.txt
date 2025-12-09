@@ -1,1 +1,0 @@
-select dir from fs bfs where dir != 'dir2' and is_file
