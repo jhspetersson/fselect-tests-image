@@ -1,0 +1,1 @@
+<html><head><title>select name, ext from fs where ext = 'txt' order by name into html</title></head><body><table><tr><th colspan="2">select name, ext from fs where ext = 'txt' order by name into html</th></tr><tr><td>file1.txt</td><td>txt</td></tr><tr><td>file2.txt</td><td>txt</td></tr></table></body></html>
