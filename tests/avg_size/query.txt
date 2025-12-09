@@ -1,0 +1,1 @@
+select avg(size) from fs where name like '%.md'
