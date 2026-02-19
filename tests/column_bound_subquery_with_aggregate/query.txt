@@ -1,1 +1,1 @@
-select fs.name, (select max(size) from fs as fs2 where is_file and fs2.dir = fs.name) from fs depth 1 as fs into csv
+select fs.name, (select max(size) from fs as fs2 where is_file and fs2.dir = fs.name) from fs depth 1 as fs order by 1 into csv
