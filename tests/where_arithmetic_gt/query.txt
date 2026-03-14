@@ -1,0 +1,1 @@
+select d11.name from fs/dir1/dir11 as d11 where d11.is_file and d11.size + 10 gt 20 order by d11.name

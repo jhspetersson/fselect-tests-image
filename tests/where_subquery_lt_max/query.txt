@@ -1,0 +1,1 @@
+select name from fs/dir1 where is_file and size lt (select max(size) from fs/dir2 where is_file) order by name

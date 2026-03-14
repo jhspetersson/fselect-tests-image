@@ -1,0 +1,1 @@
+select d2.name, d2.size / 2 from fs/dir2 as d2 where d2.is_file order by d2.name into csv

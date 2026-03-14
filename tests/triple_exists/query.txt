@@ -1,0 +1,1 @@
+select d1.name from fs/dir1 as d1 where d1.is_file and exists (select d11.name from fs/dir1/dir11 as d11 where d11.filename = d1.filename) and exists (select d11b.name from fs/dir1/dir11 as d11b where d11b.ext = d1.ext) and exists (select d2.name from fs/dir2 as d2 where d2.size = d1.size + 25) order by d1.name

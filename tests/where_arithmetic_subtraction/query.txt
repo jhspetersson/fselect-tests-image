@@ -1,0 +1,1 @@
+select d2.name from fs/dir2 as d2 where d2.is_file and d2.size - 10 = 20 order by d2.name
