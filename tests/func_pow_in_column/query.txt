@@ -1,0 +1,1 @@
+select name, pow(size, 2) from fs/dir1 depth 1 where is_file order by name into csv

@@ -1,0 +1,7 @@
+file1.txt,2
+file2.md,2
+file2.txt,2
+file3.md,2
+file4.md,4
+test1.c,5
+test2.c,6

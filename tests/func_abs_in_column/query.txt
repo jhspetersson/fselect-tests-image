@@ -1,0 +1,1 @@
+select name, abs(size - 20) from fs/dir1 where is_file order by name into csv

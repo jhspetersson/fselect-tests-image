@@ -1,0 +1,1 @@
+select fs.name, round((select sum(size) from fs as fs2 where is_file and fs2.dir = fs.name) / 3) from fs depth 1 as fs order by 1 into csv

@@ -1,0 +1,1 @@
+select name from fs where is_file and sqrt(size) gt 3 order by name

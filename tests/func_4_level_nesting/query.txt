@@ -1,0 +1,1 @@
+select name, abs(ceil(sqrt(size)) - floor(sqrt(size))) from fs where is_file order by name into csv

@@ -1,0 +1,1 @@
+select name from fs where is_file and ceil(sqrt(abs(size - 10))) gte 4 order by name

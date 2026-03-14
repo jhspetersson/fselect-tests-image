@@ -1,0 +1,1 @@
+select d1.name from fs/dir1 depth 1 as d1 where d1.is_file and exists (select d2.name from fs/dir2 as d2 where d2.is_file and abs(d2.size - d1.size * 5) lt 6) order by d1.name

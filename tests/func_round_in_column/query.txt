@@ -1,0 +1,1 @@
+select name, round(size / 3) from fs/dir2 where is_file order by name into csv

@@ -1,0 +1,1 @@
+select name from fs/dir2 where is_file and ceil(size / 7) = 5 order by name

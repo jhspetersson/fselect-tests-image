@@ -1,0 +1,1 @@
+select d1.name from fs/dir1 depth 1 as d1 where d1.is_file and round(d1.size * 6) = (select min(size) from fs/dir2 where is_file) order by d1.name
