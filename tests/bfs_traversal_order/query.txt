@@ -1,1 +1,1 @@
-select name, dir from fs bfs where dir != 'dir2' and is_file into csv
+select dir from fs bfs where dir != 'dir2' and is_file limit 1 into csv

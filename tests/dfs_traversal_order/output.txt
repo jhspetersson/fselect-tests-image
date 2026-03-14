@@ -1,5 +1,1 @@
-file1.txt,dir1
-file2.md,dir1/dir11
-file3.md,dir1/dir11
-file4.md,dir1/dir11
-file2.txt,dir1
+dir1/dir11
