@@ -35,6 +35,17 @@ echo "deep-data" > "$ARC_DIR/subdir/nested/nested.csv"
 cd "$ARC_DIR/subdir" && zip -r ../archive.zip . > /dev/null 2>&1 && cd "$OLDPWD"
 rm -rf "$ARC_DIR/subdir"
 
+# Build symlink test fixture
+SYM_DIR="fs_sym"
+mkdir -p "$SYM_DIR/real/sub"
+echo "real-file-1" > "$SYM_DIR/real/file1.txt"
+echo "real-file-2-longer" > "$SYM_DIR/real/file2.txt"
+echo "sub-file" > "$SYM_DIR/real/sub/deep.txt"
+echo "sub-data" > "$SYM_DIR/real/sub/deep.csv"
+ln -s real/file1.txt "$SYM_DIR/link_file.txt"
+ln -s real/sub "$SYM_DIR/link_dir"
+ln -s nonexistent "$SYM_DIR/broken_link"
+
 RESULT=0
 
 while read -r dir; do

@@ -1,0 +1,1 @@
+select name from fs_sym symlinks where is_file order by name

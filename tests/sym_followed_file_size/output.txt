@@ -1,0 +1,5 @@
+deep.csv,9
+deep.txt,9
+file1.txt,12
+file2.txt,19
+link_file.txt,12

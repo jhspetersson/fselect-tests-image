@@ -1,0 +1,1 @@
+select name, is_file, is_dir, is_symlink from fs_sym symlinks order by name into csv

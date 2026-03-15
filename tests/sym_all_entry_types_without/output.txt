@@ -1,0 +1,9 @@
+broken_link,false,false,true
+deep.csv,true,false,false
+deep.txt,true,false,false
+file1.txt,true,false,false
+file2.txt,true,false,false
+link_dir,false,false,true
+link_file.txt,false,false,true
+real,false,true,false
+sub,false,true,false
