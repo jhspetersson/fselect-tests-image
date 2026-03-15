@@ -2,6 +2,8 @@
 
 cd "$(dirname "$0")" || exit 1
 
+umask 0000
+
 TEST_EXECUTABLE=./fselect
 FS_DIR="fs"
 TESTS_DIR="tests"
@@ -49,14 +51,20 @@ ln -s nonexistent "$SYM_DIR/broken_link"
 # Build file mode test fixture
 MODE_DIR="fs_mode"
 mkdir -p "$MODE_DIR/subdir" "$MODE_DIR/empty_dir"
+chmod 755 "$MODE_DIR/subdir"
+chmod 755 "$MODE_DIR/empty_dir"
 echo "hello" > "$MODE_DIR/regular.txt"
 echo "secret" > "$MODE_DIR/.hidden"
 touch "$MODE_DIR/empty.txt"
 printf "#!/bin/bash\necho hello\n" > "$MODE_DIR/script.sh"
 echo "int main() { return 0; }" > "$MODE_DIR/code.c"
 echo "text-in-sub" > "$MODE_DIR/subdir/sub.txt"
+chmod 644 "$MODE_DIR/subdir/sub.txt"
 cd "$MODE_DIR/subdir" && zip ../packed.zip sub.txt > /dev/null 2>&1 && cd "$OLDPWD"
 chmod 755 "$MODE_DIR/script.sh"
+chmod 644 "$MODE_DIR/code.c"
+chmod 644 "$MODE_DIR/empty.txt"
+chmod 644 "$MODE_DIR/packed.zip"
 chmod 644 "$MODE_DIR/regular.txt"
 chmod 600 "$MODE_DIR/.hidden"
 
