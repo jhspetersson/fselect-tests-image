@@ -1,0 +1,1 @@
+select name from fs_mode where is_file and not is_hidden order by name

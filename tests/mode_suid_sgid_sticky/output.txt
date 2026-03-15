@@ -1,0 +1,7 @@
+.hidden,false,false,false
+code.c,false,false,false
+empty.txt,false,false,false
+packed.zip,false,false,false
+regular.txt,false,false,false
+script.sh,false,false,false
+sub.txt,false,false,false

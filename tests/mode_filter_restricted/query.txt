@@ -1,0 +1,1 @@
+select name from fs_mode where is_file and mode = '-rw-------' order by name

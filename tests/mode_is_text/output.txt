@@ -1,0 +1,6 @@
+.hidden
+code.c
+empty.txt
+regular.txt
+script.sh
+sub.txt

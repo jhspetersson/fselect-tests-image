@@ -1,0 +1,1 @@
+select name, suid, sgid, is_sticky from fs_mode where is_file order by name into csv

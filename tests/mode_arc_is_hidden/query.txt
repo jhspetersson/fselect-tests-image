@@ -1,0 +1,1 @@
+select name, is_hidden from fs_mode archives where name = '[packed.zip] sub.txt' into csv

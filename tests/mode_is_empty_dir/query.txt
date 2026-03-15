@@ -1,0 +1,1 @@
+select name from fs_mode where is_dir and is_empty order by name

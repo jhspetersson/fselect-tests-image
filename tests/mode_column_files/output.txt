@@ -1,0 +1,7 @@
+.hidden,-rw-------
+code.c,-rw-r--r--
+empty.txt,-rw-r--r--
+packed.zip,-rw-r--r--
+regular.txt,-rw-r--r--
+script.sh,-rwxr-xr-x
+sub.txt,-rw-r--r--

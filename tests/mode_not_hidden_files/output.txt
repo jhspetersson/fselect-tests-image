@@ -1,0 +1,6 @@
+code.c
+empty.txt
+packed.zip
+regular.txt
+script.sh
+sub.txt

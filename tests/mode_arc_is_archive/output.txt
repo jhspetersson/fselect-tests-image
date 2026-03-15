@@ -1,0 +1,2 @@
+packed.zip,true
+[packed.zip] sub.txt,false
