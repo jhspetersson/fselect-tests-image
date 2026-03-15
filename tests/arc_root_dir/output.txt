@@ -1,0 +1,2 @@
+[archive.zip] data1.txt
+[archive.zip] data2.csv

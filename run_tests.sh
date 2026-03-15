@@ -24,6 +24,17 @@ if [ ! -f "$TEST_EXECUTABLE" ]; then
   exit 1
 fi
 
+# Build archive test fixture
+ARC_DIR="fs_arc"
+mkdir -p "$ARC_DIR/subdir/nested"
+echo "archived1" > "$ARC_DIR/subdir/data1.txt"
+echo "archived2-content" > "$ARC_DIR/subdir/data2.csv"
+echo "deep-file" > "$ARC_DIR/subdir/nested/nested.txt"
+echo "deep-data" > "$ARC_DIR/subdir/nested/nested.csv"
+
+cd "$ARC_DIR/subdir" && zip -r ../archive.zip . > /dev/null 2>&1 && cd "$OLDPWD"
+rm -rf "$ARC_DIR/subdir"
+
 RESULT=0
 
 while read -r dir; do

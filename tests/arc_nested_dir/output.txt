@@ -1,0 +1,2 @@
+[archive.zip] nested/nested.csv
+[archive.zip] nested/nested.txt

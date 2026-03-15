@@ -1,0 +1,4 @@
+[archive.zip] data1.txt,10
+[archive.zip] nested/nested.csv,10
+[archive.zip] nested/nested.txt,10
+[archive.zip] data2.csv,18

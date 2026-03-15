@@ -1,0 +1,1 @@
+select name, size from fs_arc archives where is_file and name regexp '\[archive' order by size, name into csv

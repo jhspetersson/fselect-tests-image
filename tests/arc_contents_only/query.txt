@@ -1,0 +1,1 @@
+select name from fs_arc archives where is_file and name regexp '\[archive' order by name
