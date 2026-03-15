@@ -1,0 +1,1 @@
+select name, size from fs where is_file and size in (select min(size) from fs where is_file group by ext) order by name into csv
