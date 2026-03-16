@@ -1,2 +1,2 @@
-[archive.zip] nested/nested.csv
-[archive.zip] nested/nested.txt
+[fs_arc/archive.zip],nested.csv
+[fs_arc/archive.zip],nested.txt

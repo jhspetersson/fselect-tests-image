@@ -1,1 +1,2 @@
-[packed.zip] sub.txt,-rw-r--r--
+[fs_mode/packed.zip],sub.txt,-rw-r--r--
+sub.txt,-rw-r--r--

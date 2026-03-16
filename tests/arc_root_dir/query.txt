@@ -1,1 +1,1 @@
-select name from fs_arc archives where is_file and name regexp '\[archive' and dir != 'nested' order by name
+select name from fs_arc archives where is_file and dir != 'nested' order by name into csv

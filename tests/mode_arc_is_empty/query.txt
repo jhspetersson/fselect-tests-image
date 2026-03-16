@@ -1,1 +1,1 @@
-select name, is_empty from fs_mode archives where name = '[packed.zip] sub.txt' into csv
+select name, is_empty from fs_mode archives where name = 'sub.txt' into csv

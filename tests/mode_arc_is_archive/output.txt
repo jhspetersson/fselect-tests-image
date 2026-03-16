@@ -1,2 +1,3 @@
 packed.zip,true
-[packed.zip] sub.txt,false
+[fs_mode/packed.zip],sub.txt,false
+sub.txt,false

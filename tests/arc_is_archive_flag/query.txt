@@ -1,1 +1,1 @@
-select name, is_archive from fs_arc archives where is_file order by name into csv
+select path, is_archive from fs_arc archives where is_file order by name into csv

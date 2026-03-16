@@ -1,1 +1,1 @@
-select name, size from fs_arc archives where is_file and name regexp '\[archive' order by size, name into csv
+select path, size from fs_arc archives where is_file and not is_archive order by size, name into csv

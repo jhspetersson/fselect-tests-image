@@ -1,1 +1,1 @@
-select name from fs_arc archives where is_file and name regexp '\[archive' and name like '%.txt' order by name
+select path from fs_arc archives where is_file and name like '%.txt' order by name

@@ -1,2 +1,2 @@
-[archive.zip] data1.txt
-[archive.zip] data2.csv
+[fs_arc/archive.zip],data1.txt
+[fs_arc/archive.zip],data2.csv

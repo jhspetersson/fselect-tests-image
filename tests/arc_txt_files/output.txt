@@ -1,2 +1,2 @@
-[archive.zip] data1.txt
-[archive.zip] nested/nested.txt
+[fs_arc/archive.zip]	data1.txt
+[fs_arc/archive.zip]	nested/nested.txt

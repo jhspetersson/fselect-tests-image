@@ -1,5 +1,5 @@
-[archive.zip] data1.txt,false
-[archive.zip] data2.csv,false
-[archive.zip] nested/nested.csv,false
-[archive.zip] nested/nested.txt,false
 archive.zip,true
+[fs_arc/archive.zip],data1.txt,false
+[fs_arc/archive.zip],data2.csv,false
+[fs_arc/archive.zip],nested/nested.csv,false
+[fs_arc/archive.zip],nested/nested.txt,false
