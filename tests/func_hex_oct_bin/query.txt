@@ -1,0 +1,1 @@
+select hex(size), oct(size), bin(size) from fs where name = 'test2.c' into csv

@@ -1,0 +1,1 @@
+select round(var_pop(size), 2), round(stddev(size), 2) from fs where is_file into csv

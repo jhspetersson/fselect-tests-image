@@ -1,0 +1,1 @@
+select substring(name, 1, 4), replace(name, 'test', 'demo') from fs where name = 'test2.c' into csv

@@ -1,0 +1,1 @@
+select upper(filename), lower(ext), length(name) from fs where name = 'file1.txt' into csv

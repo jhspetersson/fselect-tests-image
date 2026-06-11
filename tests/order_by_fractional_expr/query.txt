@@ -1,0 +1,1 @@
+select name, size / 2 from fs where is_file order by size / 2 desc, name into csv

@@ -1,0 +1,1 @@
+select count(*), count(ext), count(width) from fs into csv

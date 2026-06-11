@@ -1,0 +1,1 @@
+select coalesce(width, size) from fs where name = 'test1.c'
