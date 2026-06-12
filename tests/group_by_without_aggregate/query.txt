@@ -1,0 +1,1 @@
+select ext from fs where is_file group by ext order by max(size)
